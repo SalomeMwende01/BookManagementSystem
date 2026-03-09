@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Update Book</title>
+<style>
+
+body{
+    font-family:Arial;
+    background:#F8FAFC;
+}
+
+.form-card{
+    width:400px;
+    margin:80px auto;
+    background:#FFFFFF;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+input{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+button{
+    background:#4ADE80;
+    border:none;
+    padding:10px 15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#10B981;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="form-card">
+	
+<h2>Update Book</h2>
+
+<form th:action="@{/updateBook}" th:object="${book}" method="post">
+
+<input type="hidden" th:field="*{id}" />
+
+Title:
+<input type="text" th:field="*{title}" />
+<br><br>
+
+Author:
+<input type="text" th:field="*{author}" />
+<br><br>
+
+ISBN:
+<input type="text" th:field="*{isbn}" />
+<br><br>
+
+<button type="submit">Update Book</button>
+
+</form>
+
+<br>
+
+<a th:href="@{/}">Back to List</a>
+
+</div>
+
+</body>
+</html>
