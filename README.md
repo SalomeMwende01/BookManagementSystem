@@ -40,7 +40,7 @@ This project demonstrates the use of:
 ```
 src
  └── main
-     ├── java/com/example/bookmanagement
+     ├── java/com/comp307/lab2
      │     ├── controller
      │     ├── model
      │     ├── repository
