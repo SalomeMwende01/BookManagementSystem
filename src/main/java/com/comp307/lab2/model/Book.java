@@ -1,3 +1,14 @@
+/*
+Project: Book Management System
+Student Name: Salome Mwende
+Registration Number: IN13/00012/23
+GitHub Repository: https://github.com/SalomeMwende01/BookManagementSystem
+
+Description:
+This class represents the Book entity in the system.
+Each object of this class corresponds to a row in the
+Book table in the database.
+*/
 package com.comp307.lab2.model;
 
 import jakarta.persistence.*;

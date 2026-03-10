@@ -1,3 +1,15 @@
+/*
+Project: Book Management System
+Student Name: Salome Mwende
+Registration Number: IN13/00012/23
+GitHub Repository: https://github.com/SalomeMwende01/BookManagementSystem
+
+Description:
+This controller handles all HTTP requests for the Book
+Management System. It connects the user interface
+(Thymeleaf templates) with the database.
+*/
+
 package com.comp307.lab2.controller;
 
 import com.comp307.lab2.model.Book;
